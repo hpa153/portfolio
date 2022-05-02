@@ -1,0 +1,123 @@
+.works {
+  padding: 0 3rem 0 3rem;
+  display: flex;
+  height: 90vh;
+  margin-top: 4rem;
+  align-items: center;
+}
+
+/* right side */
+.works-right {
+  position: relative;
+
+  .works-mainCircle {
+    position: relative;
+    top: 2rem;
+    width: 18rem;
+    height: 18rem;
+    border-radius: 50%;
+    box-shadow: var(--smboxShadow);
+    background: white;
+    z-index: 2;
+
+    * {
+      position: absolute;
+    }
+  }
+
+  .works-secCircle {
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    border-radius: 50%;
+    border: 5px solid #ebebeb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--smboxShadow);
+    background: white;
+    color: var(--black);
+    
+    &:nth-child(1) {
+      top: -3rem;
+      left: 6rem;
+    }
+
+    &:nth-child(2) {
+      left: -3rem;
+      top: 5rem;
+    }
+
+    &:nth-child(3) {
+      left: 6rem;
+      top: 5rem;
+    }
+
+    &:nth-child(4) {
+      left: 15rem;
+      top: 5rem;
+    }
+
+    &:nth-child(5) {
+      left: 6rem;
+      top: 13rem;
+    }
+  }
+
+  .works-backCircle {
+    position: absolute;
+    height: 13rem;
+    width: 13rem;
+    border-radius: 50%;
+    z-index: 1;
+  }
+}
+
+.blueCircle {
+  background: #1949b8;
+  left: 9rem;
+  top: 0rem;
+}
+
+.yellowCircle {
+  background: #f5c32c;
+  left: 9rem;
+  top: 8rem;
+}
+
+/* blur */
+.work-blur1 {
+  top: 95rem;
+  left: 44rem;
+}
+
+.work-blur2 {
+  top: 119rem;
+  left: 4rem;
+  background: #c1f5ff;
+}
+
+@media screen and (max-width: 480px) {
+  .works {
+    flex-direction: column;
+    height: auto;
+    padding: 0;
+    gap: 5rem;
+  }
+
+  .works-right {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    transform: scale(0.7);
+  }
+
+  .works-mainCircle {
+    position: static;
+  }
+
+  .works-backCircle {
+    left: 8rem !important;
+  }
+
+}

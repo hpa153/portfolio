@@ -1,0 +1,63 @@
+.contact-form {
+    padding: 0 3rem 0 3rem;
+    display: flex;
+    height: 80vh;
+    margin-top: 4rem;
+    padding-top: 3rem;
+
+    .contact-right {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        flex: 1;
+
+        form {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 2rem;
+            width: 100%;
+
+
+            .user {
+                width: 80%;
+                height: 2rem;
+                padding: 0.2em 0.4rem;
+                outline: none;
+                border: 2px solid var(--orange);
+                border-radius: 8px;
+                font-size: 16px;
+
+                &:nth-child(3) {
+                    padding: 0.7rem 0.4rem;
+                }
+            }
+        }
+
+        textarea {
+            height: 4rem !important;
+        }
+    }
+}
+
+.contact-blur1 {
+    background: #abf1ff94;
+}
+
+.contact-blur2 {
+    top: 9rem;
+    left: 28rem;
+}
+
+.contact-info {
+    width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+    .contact-form {
+        padding: 0;
+        flex-direction: column;
+        gap: 5rem;
+        height: 40rem;
+    }
+}

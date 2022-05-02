@@ -1,0 +1,51 @@
+.services {
+  padding: 0 3rem 0 3rem;
+  display: flex;
+  height: 30rem;
+  margin-bottom: 8rem;
+  margin-top: 9rem;
+  margin-bottom: 13rem;
+  padding-top: 3rem;
+}
+
+/* right side */
+.cards {
+  position: relative;
+}
+
+.cards>* {
+  position: absolute;
+}
+
+/* blur */
+.service-blur1 {
+  top: 70rem;
+  left: 0rem;
+  background: var(--purple);
+}
+
+.service-blur2 {
+  top: 62rem;
+  left: 44rem;
+  background: #c1f5ff;
+}
+
+@media screen and (max-width: 480px) {
+  .services {
+    margin-top: 0;
+    flex-direction: column;
+    gap: 5rem;
+    height: 66rem;
+    padding: 0;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 17rem;
+  }
+
+  .cards>* {
+    position: static;
+  }
+}
